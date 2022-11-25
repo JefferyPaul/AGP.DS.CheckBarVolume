@@ -56,7 +56,7 @@ if __name__ == '__main__':
         if _product not in d_old_product_ticker.keys():
             continue
         if _ticker != d_old_product_ticker[_product]:
-            l_changed_product_ticker.append([_product, _ticker, d_old_product_ticker[_product]])
+            l_changed_product_ticker.append([new_file_date, _product, _ticker, d_old_product_ticker[_product]])
 
     # 输出
     p_output_file = os.path.join(PATH_OUTPUT, 'ChangedProductTicker.csv')
